@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #4CAF50, #2E7D32);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #4CAF50;
+            font-size: 2.5rem;
+            margin-bottom: 24px;
+        }
+
+        .contact-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .contact-table th, .contact-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .contact-table th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+        }
+
+        .contact-table td a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-table td a:hover {
+            color: #2E7D32;
+            text-decoration: underline;
+        }
+
+        .contact-type {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-icon {
+            width: 24px;
+            margin-right: 12px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            .contact-table th, .contact-table td {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Entre em Contato</h1>
+
+        <table class="contact-table">
+            <tr>
+                <th>Tipo</th>
+                <th>Contato</th>
+            </tr>
+            <tr>
+                <td class="contact-type">
+                    <img src="https://img.icons8.com/ios-filled/50/4caf50/phone.png" class="contact-icon" alt="Telefone">
+                    Telefone
+                </td>
+                <td><a href="tel:+5511999999999">(11) 99999-9999</a></td>
+            </tr>
+            <tr>
+                <td class="contact-type">
+                    <img src="https://img.icons8.com/ios-filled/50/4caf50/new-post.png" class="contact-icon" alt="E-mail">
+                    E-mail
+                </td>
+                <td><a href="mailto:email@exemplo.com">email@exemplo.com</a></td>
+            </tr>
+            <tr>
+                <td class="contact-type">
+                    <img src="https://img.icons8.com/ios-filled/50/4caf50/instagram-new.png" class="contact-icon" alt="Instagram">
+                    Instagram
+                </td>
+                <td><a href="https://www.instagram.com/seuusuario" target="_blank">@seuusuario</a></td>
+            </tr>
+            <tr>
+                <td class="contact-type">
+                    <img src="https://img.icons8.com/ios-filled/50/4caf50/facebook-new.png" class="contact-icon" alt="Facebook">
+                    Facebook
+                </td>
+                <td><a href="https://www.facebook.com/seuusuario" target="_blank">facebook.com/seuusuario</a></td>
+            </tr>
+            <tr>
+                <td class="contact-type">
+                    <img src="https://img.icons8.com/ios-filled/50/4caf50/whatsapp.png" class="contact-icon" alt="WhatsApp">
+                    WhatsApp
+                </td>
+                <td><a href="https://wa.me/5511999999999" target="_blank">(11) 99999-9999</a></td>
+            </tr>
+        </table>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/seuusuario" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/4caf50/instagram-new.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/seuusuario" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/4caf50/facebook-new.png" alt="Facebook">
+            </a>
+            <a href="https://wa.me/5511999999999" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/4caf50/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

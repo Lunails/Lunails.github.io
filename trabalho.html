@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trabalho</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Barra superior */
+        .top-bar {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Nome do usuário */
+        .user-name {
+            margin-left: 10px;
+            font-size: 1.2em;
+        }
+        /* Botão de redirecionamento */
+        .redirect-button {
+            margin-right: 10px;
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .redirect-button:hover {
+            background-color: #777;
+        }
+        /* Galeria */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
+        }
+        .gallery img, .gallery video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <div class="top-bar">
+        <div class="user-name">Lu_nails</div>
+        <button class="redirect-button" onclick="window.location.href='https://wa.me/+553899440664';">Entre em contato</button>
+    </div>
+
+    <!-- Galeria -->
+    <div class="gallery">
+        <!-- Imagens -->
+        <img src="img-vds/20240915.jpg" alt="Imagem 1">
+
+        <video controls>
+            <source src="img-vds/20240915-0001.mp4" type="video/mp4">
+            Seu navegador não suporta o formato de vídeo.
+        </video>
+
+    </div>
+
+</body>
+</html>

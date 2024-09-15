@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Meu Blog Pessoal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6C63FF, #4C4B7D);
+            color: #fff;
+            padding: 50px 0;
+            text-align: center;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease;
+        }
+
+nav {
+    background-color: #4C4B7D;
+    padding: 10px 20px; /* Ajuste o padding do contêiner conforme necessário */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Fixa a barra de navegação ao rolar */
+    top: 0;
+    z-index: 1000;
+    display: flex; /* Utiliza flexbox para alinhamento */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+nav a {
+    color: white;
+    padding: 10px 15px; /* Reduz o padding dos links */
+    margin: 0 8px; /* Reduz o espaço entre os links */
+    text-decoration: none;
+    font-weight: 500; /* Ajusta o peso da fonte */
+    font-size: 0.9em; /* Reduz o tamanho da fonte */
+    text-transform: uppercase;
+    border-radius: 25px; /* Reduz o raio da borda */
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05); /* Reduz o tamanho do efeito de hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row; /* Garante que os itens permaneçam lado a lado em telas pequenas */
+    }
+
+    nav a {
+        padding: 8px 12px; /* Ajusta o padding dos links em telas menores */
+        margin: 5px; /* Reduz o espaço entre os links em telas menores */
+        font-size: 0.85em; /* Reduz o tamanho da fonte em telas menores */
+    }
+}
+
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .post {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            flex-basis: calc(50% - 10px);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .post:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .post:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+            background: rgba(108, 99, 255, 0.05);
+            transform: rotate(45deg);
+            transition: all 0.5s ease;
+        }
+
+        .post:hover:before {
+            left: -50%;
+        }
+
+        .post h2 {
+            margin-top: 0;
+            font-size: 2em;
+            color: #6C63FF;
+            transition: color 0.3s ease;
+        }
+
+        .post:hover h2 {
+            color: #4C4B7D;
+        }
+
+        .post p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .post time {
+            font-size: 0.9em;
+            color: #999;
+        }
+
+        footer {
+            background-color: #4C4B7D;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animação */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .post {
+                flex-basis: 100%;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Luciana designer</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="trabalho.html">Trabalho</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+
+    <div class="container">
+
+      <h1>exemplos!</h1>
+
+        <div class="post">
+            <h2>Título da Postagem 1</h2>
+            <time>Data: 15 de setembro de 2024</time>
+            <p>Este é o conteúdo da sua primeira postagem no blog. Compartilhe suas ideias, projetos e experiências de forma interativa e elegante.</p>
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <p>© 2024 Lu_nails.</p>
+    </footer>
+
+</body>
+</html>
